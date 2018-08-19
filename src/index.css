@@ -1,9 +1,22 @@
-body {
-  margin: 0;
-  background-color: #fafafa;
+:local(.userList) {
+  list-style: none;
+  padding: 0;
 }
 
-p {
-  padding: 20px;
-  background-color: white;
+:local(.userList) > li{
+  display: flex;
+  align-items: center;
+}
+
+:local(.userList) > li:before{
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+:local(.userListItem--female):before {
+  content: '♀';
+}
+
+:local(.userListItem--male):before {
+  content: '♂';
 }
